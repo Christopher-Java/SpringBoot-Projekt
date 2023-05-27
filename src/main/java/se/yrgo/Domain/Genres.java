@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Genres {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private int id;
+    private long id;
     private String category;
     
     public Genres(){}
@@ -18,7 +18,7 @@ public class Genres {
         this.category = category;
     }
     
-    public int getId() {
+    public long getId() {
         return id;
     }
     
