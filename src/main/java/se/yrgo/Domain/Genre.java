@@ -5,24 +5,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Actors {
+public class Genre {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private String name;
     private long id;
+    private String category;
     
-    public Actors(){}
-    public Actors(String name, int id) {
-        this.name = name;
+    public Genre(){}
+    
+    public Genre(int id, String category) {
         this.id = id;
-    }
-    
-    public String getName() {
-        return name;
-    }
-    
-    public void setName(String name) {
-        this.name = name;
+        this.category = category;
     }
     
     public long getId() {
@@ -33,11 +26,19 @@ public class Actors {
         this.id = id;
     }
     
+    public String getCategory() {
+        return category;
+    }
+    
+    public void setCategory(String category) {
+        this.category = category;
+    }
+    
     @Override
     public String toString() {
-        return "Actors{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
+        return "Genres{" +
+                "id=" + id +
+                ", category='" + category + '\'' +
                 '}';
     }
 }

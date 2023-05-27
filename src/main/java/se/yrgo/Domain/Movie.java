@@ -4,23 +4,23 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class Movies {
+public class Movie {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
     @ElementCollection
-    private List<Actors> actors;
+    private List<Actor> actors;
     @ElementCollection
-    private List<Genres> genres;
+    private List<Genre> genres;
     private String title;
     @ManyToOne
     private Director director;
     private int year;
     
-    public Movies() {
+    public Movie() {
     }
     
-    public Movies(Long id, List<Actors> actors, List<Genres> genres, String title, Director director, int year) {
+    public Movie(Long id, List<Actor> actors, List<Genre> genres, String title, Director director, int year) {
         this.id = id;
         this.actors = actors;
         this.genres = genres;
@@ -37,19 +37,19 @@ public class Movies {
         this.id = id;
     }
     
-    public List<Actors> getActors() {
+    public List<Actor> getActors() {
         return actors;
     }
     
-    public void setActors(List<Actors> actors) {
+    public void setActors(List<Actor> actors) {
         this.actors = actors;
     }
     
-    public List<Genres> getGenres() {
+    public List<Genre> getGenres() {
         return genres;
     }
     
-    public void setGenres(List<Genres> genres) {
+    public void setGenres(List<Genre> genres) {
         this.genres = genres;
     }
     
