@@ -1,3 +1,4 @@
+
 package se.yrgo.Domain;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -42,3 +43,4 @@ public class Genre {
                 '}';
     }
 }
+
