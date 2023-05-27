@@ -9,7 +9,7 @@ public class Actors {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private String name;
-    private int id;
+    private long id;
     
     public Actors(){}
     public Actors(String name, int id) {
@@ -25,7 +25,7 @@ public class Actors {
         this.name = name;
     }
     
-    public int getId() {
+    public long getId() {
         return id;
     }
     

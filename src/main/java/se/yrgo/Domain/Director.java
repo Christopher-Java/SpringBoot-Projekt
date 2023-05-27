@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Director {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private int id;
+    private long id;
     private String name;
     
     
@@ -23,7 +23,7 @@ public class Director {
         this.id = id;
     }
     
-    public int getId() {
+    public long getId() {
         return id;
     }
     public String getName() {
