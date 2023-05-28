@@ -1,5 +1,5 @@
-
 package se.yrgo.Domain;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,13 +11,13 @@ public class Genre {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
-    private String name;
+    private String category;
     
     public Genre(){}
     
-    public Genre(Long id, String name) {
+    public Genre(Long id, String category) {
         this.id = id;
-        this.name = name;
+        this.category = category;
     }
 
     public Genre(List<Genre> all) {
@@ -31,19 +31,19 @@ public class Genre {
         this.id = id;
     }
     
-    public String geName() {
-        return name;
+    public String getCategory() {
+        return category;
     }
     
     public void setCategory(String category) {
-        this.name = name;
+        this.category = category;
     }
     
     @Override
     public String toString() {
         return "Genre{" +
                 "id=" + id +
-                ", category='" + name + '\'' +
+                ", category='" + category + '\'' +
                 '}';
     }
 }
