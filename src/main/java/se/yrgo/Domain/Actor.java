@@ -25,7 +25,7 @@ public class Actor {
         this.name = name;
     }
     
-    public long getId() {
+    public Long getId() {
         return id;
     }
     

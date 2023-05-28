@@ -19,7 +19,7 @@ public class Genre {
         this.category = category;
     }
     
-    public long getId() {
+    public Long getId() {
         return id;
     }
     

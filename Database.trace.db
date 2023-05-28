@@ -250,3 +250,27 @@ alter table movie_actors add constraint FKbsto8yef4btokhveihmkg8876 foreign key 
 2023-05-28 16:46:47 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
 alter table movie_genres add constraint FKs2xl3sirbon75mjcongwhrbi3 foreign key (movie_id) references movie [42102-214]
+2023-05-28 17:05:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table movie (id bigint not null, title varchar(255), [*]year integer not null, director_id bigint, primary key (id))"; expected "identifier"; SQL statement:
+create table movie (id bigint not null, title varchar(255), year integer not null, director_id bigint, primary key (id)) [42001-214]
+2023-05-28 17:05:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+alter table movie add constraint FKbi47w3cnsfi30gc1nu2avgra2 foreign key (director_id) references director [42102-214]
+2023-05-28 17:05:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+alter table movie_actors add constraint FKbsto8yef4btokhveihmkg8876 foreign key (movie_id) references movie [42102-214]
+2023-05-28 17:05:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+alter table movie_genres add constraint FKs2xl3sirbon75mjcongwhrbi3 foreign key (movie_id) references movie [42102-214]
+2023-05-28 17:09:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table movie (id bigint not null, title varchar(255), [*]year integer not null, director_id bigint, primary key (id))"; expected "identifier"; SQL statement:
+create table movie (id bigint not null, title varchar(255), year integer not null, director_id bigint, primary key (id)) [42001-214]
+2023-05-28 17:09:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+alter table movie add constraint FKbi47w3cnsfi30gc1nu2avgra2 foreign key (director_id) references director [42102-214]
+2023-05-28 17:09:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+alter table movie_actors add constraint FKbsto8yef4btokhveihmkg8876 foreign key (movie_id) references movie [42102-214]
+2023-05-28 17:09:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+alter table movie_genres add constraint FKs2xl3sirbon75mjcongwhrbi3 foreign key (movie_id) references movie [42102-214]
