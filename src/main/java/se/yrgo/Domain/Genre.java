@@ -1,3 +1,4 @@
+
 package se.yrgo.Domain;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,9 +37,10 @@ public class Genre {
     
     @Override
     public String toString() {
-        return "Genres{" +
+        return "Genre{" +
                 "id=" + id +
                 ", category='" + category + '\'' +
                 '}';
     }
 }
+
