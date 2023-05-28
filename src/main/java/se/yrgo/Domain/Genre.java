@@ -9,12 +9,12 @@ import javax.persistence.Id;
 public class Genre {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private long id;
+    private Long id;
     private String category;
     
     public Genre(){}
     
-    public Genre(int id, String category) {
+    public Genre(Long id, String category) {
         this.id = id;
         this.category = category;
     }
@@ -23,7 +23,7 @@ public class Genre {
         return id;
     }
     
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
     

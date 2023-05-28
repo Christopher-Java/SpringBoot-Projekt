@@ -8,11 +8,11 @@ import javax.persistence.Id;
 public class Actor {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
+    private Long id;
     private String name;
-    private long id;
     
     public Actor(){}
-    public Actor(String name, int id) {
+    public Actor(String name, Long id) {
         this.name = name;
         this.id = id;
     }
@@ -29,7 +29,7 @@ public class Actor {
         return id;
     }
     
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
     
