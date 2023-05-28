@@ -10,13 +10,13 @@ public class Genre {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
-    private String category;
+    private String name;
     
     public Genre(){}
     
-    public Genre(Long id, String category) {
+    public Genre(Long id, String name) {
         this.id = id;
-        this.category = category;
+        this.name = name;
     }
     
     public Long getId() {
@@ -27,19 +27,19 @@ public class Genre {
         this.id = id;
     }
     
-    public String getCategory() {
-        return category;
+    public String geName() {
+        return name;
     }
     
     public void setCategory(String category) {
-        this.category = category;
+        this.name = name;
     }
     
     @Override
     public String toString() {
         return "Genre{" +
                 "id=" + id +
-                ", category='" + category + '\'' +
+                ", category='" + name + '\'' +
                 '}';
     }
 }

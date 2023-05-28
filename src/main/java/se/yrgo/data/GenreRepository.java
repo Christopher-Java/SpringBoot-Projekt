@@ -6,5 +6,5 @@ import se.yrgo.Domain.Genre;
 
 @Repository
 public interface GenreRepository extends JpaRepository<Genre, Long> {
-    public Genre findByName(String category);
+    public Genre findByName(String name);
 }
