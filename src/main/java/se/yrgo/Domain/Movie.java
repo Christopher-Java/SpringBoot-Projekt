@@ -8,23 +8,24 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
-    @ElementCollection
+    @OneToMany
     private List<Actor> actors;
-    @ElementCollection
+    @OneToMany
     private List<Genre> genres;
-    private String title;
+    private String name;
     @ManyToOne
     private Director director;
+    @Column(name = "`year`", nullable = false)
     private int year;
     
     public Movie() {
     }
     
-    public Movie(Long id, List<Actor> actors, List<Genre> genres, String title, Director director, int year) {
+    public Movie(Long id, List<Actor> actors, List<Genre> genres, String name, Director director, int year) {
         this.id = id;
         this.actors = actors;
         this.genres = genres;
-        this.title = title;
+        this.name = name;
         this.director = director;
         this.year = year;
     }
@@ -53,12 +54,12 @@ public class Movie {
         this.genres = genres;
     }
     
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
     
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
     @ManyToOne
     public Director getDirector() {
@@ -83,7 +84,7 @@ public class Movie {
                 "id=" + id +
                 ", actors=" + actors +
                 ", genres=" + genres +
-                ", title='" + title + '\'' +
+                ", title='" + name + '\'' +
                 ", director=" + director +
                 ", year=" + year +
                 '}';
