@@ -81,11 +81,11 @@ public class Movie {
     @Override
     public String toString() {
         return "Movie{" +
+                ", title='" + name + '\'' +
+                ", director=" + director +
                 "id=" + id +
                 ", actors=" + actors +
                 ", genres=" + genres +
-                ", title='" + name + '\'' +
-                ", director=" + director +
                 ", year=" + year +
                 '}';
     }
