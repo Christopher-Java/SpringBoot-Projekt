@@ -2,22 +2,24 @@ package se.yrgo.rest;
 
 import se.yrgo.Domain.Movie;
 
+import java.util.List;
+
 
 public class MovieList {
-    private Movie movies;
+    private List<Movie> movies;
 
     public MovieList() {
     }
 
-    public MovieList(Movie movies) {
+    public MovieList(List<Movie> movies) {
         this.movies = movies;
     }
 
-    public Movie getMovies() {
+    public List<Movie> getMovies() {
         return movies;
     }
 
-    public void setActors(Movie movies) {
+    public void setMovies(List<Movie> movies) {
         this.movies = movies;
     }
 }

@@ -19,7 +19,7 @@ public class Genre {
         this.id = id;
         this.category = category;
     }
-
+    
     public Genre(List<Genre> all) {
     }
 
